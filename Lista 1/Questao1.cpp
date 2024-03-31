@@ -31,25 +31,25 @@ int main(int argc, char const *argv[])
 {
     while (true){
         setlocale(LC_ALL, "Portuguese");
-        /*declarando variáveis*/
+        /*declarando variï¿½veis*/
         int opcao, numero, convertido = 0;
-        cout << "\nDigite o número a ser convertido:\n";
+        cout << "\nDigite o numero a ser convertido:\n";
         cin >> numero;
-        cout << "\nqual opção? \n 1- Binário para decimal \n 2- Decimal para binário\n";
+        cout << "\nqual opcao? \n 1- Binario para decimal \n 2- Decimal para binario\n";
         cin >> opcao;
         switch (opcao)
         {
         case 1:
-            /* chamar Binário para decimal*/
+            /* chamar Binï¿½rio para decimal*/
             convertido = binarioParaDecimal(numero);
-            cout << "o número em Decimal é " << convertido << endl;
+            cout << "o numero em Decimal eh " << convertido << endl;
             continue;
         case 2:
             convertido = decimalParaBinario(numero);
-            cout << "o número em Binário é " << convertido << endl;
+            cout << "o numero em BinÃ¡rio eh " << convertido << endl;
             continue;
         default:
-            cout << "Opção inválida!" <<endl;
+            cout << "Opcao invalida!" <<endl;
             continue;
         }
     }
